@@ -1,0 +1,2 @@
+marshmallow==3.2.2
+graphene==2.1.8
