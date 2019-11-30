@@ -6,5 +6,7 @@ class User(graphene.ObjectType):
     email = graphene.String(required=True)
     phone_number = graphene.String()
 
-    def resolve_name(self, args, context, info):
+    def resolve_name(root, info):
         return 'Entropy'
+    def resolve_email(root, info):
+        return 'bac93.it@gmail.com'
